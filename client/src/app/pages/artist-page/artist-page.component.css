@@ -1,5 +1,7 @@
 #artistImg {
-	max-width: 400%;
+	/*Keep the image inside its column; height:auto keeps the proportions when it shrinks.*/
+	max-width: 100%;
+	height: auto;
 }
 
 app-artist {

@@ -8,7 +8,9 @@ import { Popularity } from 'src/app/data/popularity';
     standalone: false
 })
 export class ThermometerComponent implements OnInit {
-  //TODO: define Input fields and bind them to the template.
+  //The resource's popularity, passed in by the parent page (e.g. [popularity]="artist.popularity").
+  //Can be undefined when Spotify reports a popularity of 0, so the template checks for it.
+  @Input() popularity:Popularity;
 
   constructor() { }
 
